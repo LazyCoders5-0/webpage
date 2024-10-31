@@ -1,35 +1,174 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Header */
 #College {
     text-align: center;
-    border-width: 2px solid black;
-    border-style: dotted;
-    border-width:thick;
+    border: 2px dotted black;
+    padding: 1rem;
+    background-color: #f0f8ff;
+    font-size: 2.5rem;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
 #Head {
     text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: #0056b3;
+    animation: fadeIn 2s ease-in-out 1s;
 }
 
 #Logo {
     float: right;
+    margin: 1rem;
+    animation: slideIn 2s ease-in-out 1s;
 }
 
-.Personal {
-    font-size: 2rem;
+/* Form Styles */
+.Personal, .branch, .club {
+    font-size: 1.2rem;
+    padding: 0.5rem;
 }
 
 .container {
     display: flex;
-    justify-content:space-evenly;
-    font-size: 2rem;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
 }
 
 .container fieldset {
-    width: 38%;
+    width: 45%;
+    border: 2px solid #0056b3;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #e6f2ff;
+    animation: zoomIn 1.5s ease-in-out;
 }
-#sub{
-    margin-left: 50%;
-    font-size: 3rem;
+
+/* Input Styles */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: fadeIn 1.5s ease-in-out;
 }
-#b{
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Textarea and Submit Button */
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#sub {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#sub:hover {
+    background-color: #003d80;
+}
+
+/* Background and Chatbot */
+#b {
     background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    z-index: 1000;
+    border-radius: 10px;
+    animation: bounceIn 2s ease-in-out;
+}
+
+.chatbot-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+    }
 }
