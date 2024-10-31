@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>t</title>
-  </head>
-  <body>
-    <p>Hi</p>
-    <j>Hola</j>
-  </body>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration Form for Shah & Anchor Kutchhi College Of Engineering">
+    <link rel="stylesheet" href="Project4-2.css">
+    <title>Forms</title>
+</head>
+<body id="b">
+    <h1 id="College">Shah & Anchor Kutchhi College Of Engineering</h1>
+    <img id="Logo" src="https://www.sakec.ac.in/wp-content/uploads/2022/05/ShahAnchor-logo-v1.png" alt="College Logo">
+    <h2 id="Head">Student Registration Form</h2>
+    <form class="Personal">
+        <label id="fname">Full Name: </label>
+        <input type="text" id="fname"><br><br>
+        <label id="no">Contact No.: </label>
+        <input id="no" type="tel"><br><br>
+        <label id="email">Email ID: </label>
+        <input type="email" id="email"><br><br>
+        <label id="DOB">Date Of Birth: </label>
+        <input type="date" id="DOB">
+    </form>
+    <div class="container">
+        <fieldset>
+            <legend>Select Your Branch</legend>
+            <form class="branch">
+                <label>Computer</label>
+                <input name="branch" type="radio"><br>
+                <label>IT</label>
+                <input name="branch" type="radio"><br>
+                <label>AiDs</label>
+                <input name="branch" type="radio"><br>
+                <label>EXTC</label>
+                <input name="branch" type="radio"><br>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Select Professional Bodies That you want to take part in:</legend>
+            <form class="club">
+                <label>ECELL</label>
+                <input type="checkbox">
+                <label>ISTE</label>
+                <input type="checkbox"><br>
+                <label>CSI</label>
+                <input type="checkbox">
+                <label>IEEE</label>
+                <input type="checkbox"><br>
+                <label>IPR</label>
+                <input type="checkbox">
+                <label>Research</label>
+                <input type="checkbox"><br>
+            </form>
+        </fieldset>
+    </div>
+    <fieldset>
+        <legend>Give Your Opinions</legend>
+        <textarea rows="10" cols="100" placeholder="Why do I like Using web3?"></textarea>
+    </fieldset>
+    <input id="sub" type="submit">
+
+    <div class="chatbot-container">
+        <iframe class="chatbot-frame" src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/10/31/15/20241031151447-TUXW9YS7.json"></iframe>
+    </div>
+
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/10/31/15/20241031154115-4SHMSPRM.js"></script>
+</body>
 </html>
