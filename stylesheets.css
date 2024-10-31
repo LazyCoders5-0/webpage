@@ -1,0 +1,35 @@
+#College {
+    text-align: center;
+    border-width: 2px solid black;
+    border-style: dotted;
+    border-width:thick;
+}
+
+#Head {
+    text-align: center;
+}
+
+#Logo {
+    float: right;
+}
+
+.Personal {
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 2rem;
+}
+
+.container fieldset {
+    width: 38%;
+}
+#sub{
+    margin-left: 50%;
+    font-size: 3rem;
+}
+#b{
+    background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
